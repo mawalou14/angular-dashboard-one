@@ -13,6 +13,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { TotStatsComponent } from './main/pages/dashboard/tot-stats/tot-stats.component';
+import { LeftComponent } from './main/pages/dashboard/left/left.component';
+import { RightComponent } from './main/pages/dashboard/right/right.component';
+import { BottomComponent } from './main/pages/dashboard/bottom/bottom.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { TotStatsComponent } from './main/pages/dashboard/tot-stats/tot-stats.co
     WorkersComponent,
     ResourcesComponent,
     DropdownDirective,
-    TotStatsComponent
+    TotStatsComponent,
+    LeftComponent,
+    RightComponent,
+    BottomComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+/* General styles here */
+
+/* Must import this to show the b icons */
+/* @import "~bootstrap-icons/font/bootstrap-icons.css"; */
+/* @import "~@ng-select/ng-select/themes/default.theme.css"; */
+
+* {
+    font-family: "Fira Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  min-height: 100vh;
+  font-family: "Fira Sans", sans-serif;
+  overflow-x: auto;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }

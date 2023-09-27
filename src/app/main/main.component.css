@@ -1,2 +1,34 @@
 
+app-header {
+    position: fixed;
+  background-color: #fff;
+    width: calc(100% - 60px);
+    top: 0px;
+    right: 0px;
+    height: 4rem;
+    z-index: 2;
+    transition: width 250ms ease-in;
+}
+
+
+main {
+    position: absolute;
+    width: 100%;
+    top: 0rem;
+    z-index: 1;
+}
+
+
+app-sidebar {
+    position: absolute;
+    left: 0rem;
+    width: 60px;
+    height: 100vh;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    background-color: #f1f5fa;
+    overflow-x: hidden;
+    white-space: nowrap;
+    transition: width 250ms ease-in;
+    border-right: 1px solid #a4a4a4;
+}
 

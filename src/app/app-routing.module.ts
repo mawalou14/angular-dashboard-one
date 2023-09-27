@@ -6,6 +6,7 @@ import { WorkersComponent } from './main/pages/workers/workers.component';
 import { ResourcesComponent } from './main/pages/resources/resources.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/main/dashboard', pathMatch: 'full' },
   {
     path: 'main', component: MainComponent, children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },

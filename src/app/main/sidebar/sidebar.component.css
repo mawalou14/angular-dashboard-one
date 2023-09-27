@@ -1,0 +1,124 @@
+
+.side-nav-content {
+    color: #000000;
+    width: 230px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    background-color: #f1f5fa;
+}
+
+.logo-image-container {
+    min-width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: 30px 0 30px 0;
+    transition: all 0.5s ease;
+  }
+
+  .logo-image-container-closed {
+    min-width: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    margin: 15px 0 15px 5px;
+    transition: all 0.5s ease;
+  }
+
+ .logo-image-container img.logo-image-opened {
+    width: 158px;
+    height: 109px;
+    object-fit: cover;
+    align-self: center;
+    transition: all 0.5s ease;
+  }
+  
+  .logo-image-container img.logo-image-closed {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    align-self: center;
+    transition: all 0.5s ease;
+  }
+
+.nav-list {
+    list-style: none;
+    height: 10%;
+    padding: 0%;
+    margin-bottom: 0%;
+}
+
+.nav-list-item {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.sidebar-toggle-opened {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-top: 30%;
+    top: 100%;
+    bottom: 5px;
+    justify-content: flex-end;
+}
+
+.sidebar-toggle-closed {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-top: 30%;
+    top: 100%;
+    bottom: 5px;
+}
+
+.nav-list-open .nav-list-item:hover,
+.nav-list-item:hover {
+    color: #2d8de4; 
+    /* border-radius: 10px; */
+    transition: 240ms ease-in;
+}
+
+.sidebar-toggle:hover {
+    cursor: pointer;
+}
+
+/* For the active nav link */
+
+.link-ative {
+    color: #2d8de4; 
+    /* border-radius: 10px; */
+    transition: 240ms ease-in;
+}
+
+.link-ative i,
+.link-ative span {
+    color: #2d8de4;
+}
+
+.nav-list-item i,
+.sidebar-toggle i {
+    font-size: 20px;
+    height: 25p;
+    width: 25px;
+    margin: 0 20px 0 20px;
+    line-height: 25px;
+}
+
+.sidebar-toggle i {
+    color: #000;
+}
+
+.nav-list-item span {
+    width: 10px;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}

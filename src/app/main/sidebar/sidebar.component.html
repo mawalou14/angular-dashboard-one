@@ -1,1 +1,38 @@
-<p>sidebar works!</p>
+<div class="side-nav-content">
+    <div class="logo-image-container">
+        <img class="logo-image-opened" src="../../../assets/Images/logo.jpg" alt="" />
+    </div>
+    <ul class="nav-list">
+        <a routerLink="/main/dashboard">
+            <li routerLinkActive="link-ative">
+                <i class="bi bi-window-sidebar"></i>
+                <span>
+                    Dashboard
+                </span>
+            </li>
+        </a>
+        <a routerLink="/main/missions">
+            <li routerLinkActive="link-ative" class="nav-list-item">
+                <i class="bi bi-layers"></i>
+                <span>
+                    Workers
+                </span>
+            </li>
+        </a>
+        <a routerLink="/main/members">
+            <li routerLinkActive="link-ative" class="nav-list-item">
+                <i class="bi bi-people"></i>
+                <span>
+                    Resources
+                </span>
+            </li>
+        </a>
+        <li class="sidebar-toggle">
+            <a>
+                <!-- <i [ngClass]="{'bi bi-arrow-left-circle': sideNavStatus, 
+                'bi bi-arrow-right-circle': !sideNavStatus}">
+                </i> -->
+            </a>
+        </li>
+    </ul>
+</div>

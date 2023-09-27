@@ -7,6 +7,8 @@ import { MainComponent } from './main/main.component';
 import { HeaderComponent } from './main/header/header.component';
 import { SidebarComponent } from './main/sidebar/sidebar.component';
 import { DashboardComponent } from './main/pages/dashboard/dashboard.component';
+import { WorkersComponent } from './main/pages/workers/workers.component';
+import { ResourcesComponent } from './main/pages/resources/resources.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { DashboardComponent } from './main/pages/dashboard/dashboard.component';
     MainComponent,
     HeaderComponent,
     SidebarComponent,
-    DashboardComponent
+    DashboardComponent,
+    WorkersComponent,
+    ResourcesComponent
   ],
   imports: [
     BrowserModule,

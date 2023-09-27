@@ -3,7 +3,7 @@
         <img class="logo-image-opened" [ngClass]="{'logo-image-closed' : !sideNavStatus}"
             src="../../../assets/Images/logo.jpg" alt="" />
     </div>
-
+    <hr>
     <ul class="nav-list" [ngClass]="{'nav-list-open' : sideNavStatus}">
         <a routerLink="/main/dashboard">
             <li routerLinkActive="link-ative" [class.active]="activeLink === 'dahboard'" class="nav-list-item">

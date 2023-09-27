@@ -9,6 +9,7 @@ import { SidebarComponent } from './main/sidebar/sidebar.component';
 import { DashboardComponent } from './main/pages/dashboard/dashboard.component';
 import { WorkersComponent } from './main/pages/workers/workers.component';
 import { ResourcesComponent } from './main/pages/resources/resources.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ResourcesComponent } from './main/pages/resources/resources.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

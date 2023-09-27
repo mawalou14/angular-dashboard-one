@@ -10,6 +10,7 @@ import { DashboardComponent } from './main/pages/dashboard/dashboard.component';
 import { WorkersComponent } from './main/pages/workers/workers.component';
 import { ResourcesComponent } from './main/pages/resources/resources.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SidebarComponent,
     DashboardComponent,
     WorkersComponent,
-    ResourcesComponent
+    ResourcesComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,

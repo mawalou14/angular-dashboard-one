@@ -1,0 +1,42 @@
+
+.full-width-header nav {
+    height: 100%;
+}
+
+select {
+    border:0px;
+    outline:0px;
+    margin-right: 20px;
+    background-color: transparent;
+    cursor: pointer;
+ }
+
+nav {
+    background-color: #fff;
+    border-bottom: 1px solid #e1e1e2;
+    transition: all 0.5s ease;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+.profile {
+    display: flex;
+    width: auto;
+}
+
+.profile .user-name {
+    margin-right: 5px;
+    align-self: center;
+    font-weight: 500;
+    font-size: 18px;
+    color: #6d6d6d;
+}
+
+.profile-image img {
+    width: 41px;
+    height: 41px;
+    object-fit: cover;
+    border-radius: 50%;
+}

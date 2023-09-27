@@ -12,6 +12,7 @@ import { ResourcesComponent } from './main/pages/resources/resources.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import { TotStatsComponent } from './main/pages/dashboard/tot-stats/tot-stats.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NgApexchartsModule } from 'ng-apexcharts';
     DashboardComponent,
     WorkersComponent,
     ResourcesComponent,
-    DropdownDirective
+    DropdownDirective,
+    TotStatsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,40 @@
+/* .cards {
+    padding: 20px 0px 0 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  } */
+  
+  .box {
+    background-color: #fff;
+    width: 100%;
+    height: 90px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 5px 5px 0px;
+    border: 1px solid #e1e1e2;
+  }
+  
+  .box .box-label {
+    width: 60%;
+    height: 100%;
+    margin-left: 20px;
+    font-size: 12px;
+  }
+  
+  .box .box-label h3 {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 0px;
+  }
+  
+  .box .box-icon i {
+    margin-top: 10px;
+    margin-right: 25px;
+    font-size: 30px;
+    font-weight: bolder;
+  }

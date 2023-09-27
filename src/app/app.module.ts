@@ -11,6 +11,7 @@ import { WorkersComponent } from './main/pages/workers/workers.component';
 import { ResourcesComponent } from './main/pages/resources/resources.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { NgApexchartsModule } from 'ng-apexcharts';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DropdownDirective } from './shared/dropdown.directive';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgApexchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

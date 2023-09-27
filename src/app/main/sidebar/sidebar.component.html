@@ -1,17 +1,19 @@
 <div class="side-nav-content">
-    <div class="logo-image-container">
-        <img class="logo-image-opened" src="../../../assets/Images/logo.jpg" alt="" />
+    <div class="logo-image-container" [ngClass]="{'logo-image-container-closed' : !sideNavStatus}">
+        <img class="logo-image-opened" [ngClass]="{'logo-image-closed' : !sideNavStatus}"
+            src="../../../assets/Images/logo.jpg" alt="" />
     </div>
-    <ul class="nav-list">
+
+    <ul class="nav-list" [ngClass]="{'nav-list-open' : sideNavStatus}">
         <a routerLink="/main/dashboard">
-            <li routerLinkActive="link-ative">
+            <li routerLinkActive="link-ative" [class.active]="activeLink === 'dahboard'" class="nav-list-item">
                 <i class="bi bi-window-sidebar"></i>
                 <span>
                     Dashboard
                 </span>
             </li>
         </a>
-        <a routerLink="/main/missions">
+        <a routerLink="/main/workers" [class.active]="activeLink === 'missions'">
             <li routerLinkActive="link-ative" class="nav-list-item">
                 <i class="bi bi-layers"></i>
                 <span>
@@ -19,19 +21,21 @@
                 </span>
             </li>
         </a>
-        <a routerLink="/main/members">
-            <li routerLinkActive="link-ative" class="nav-list-item">
+        <a routerLink="/main/resources">
+            <li routerLinkActive="link-ative" [class.active]="activeLink === 'members'" class="nav-list-item">
                 <i class="bi bi-people"></i>
                 <span>
                     Resources
                 </span>
             </li>
         </a>
-        <li class="sidebar-toggle">
+        <hr>
+        <li class="sidebar-toggle" [ngClass]="{'sidebar-toggle-opened': sideNavStatus, 
+'sidebar-toggle-closed': !sideNavStatus}">
             <a>
-                <!-- <i [ngClass]="{'bi bi-arrow-left-circle': sideNavStatus, 
-                'bi bi-arrow-right-circle': !sideNavStatus}">
-                </i> -->
+                <i (click)="sideNavToggle()" [ngClass]="{'bi bi-arrow-bar-left': sideNavStatus, 
+                'bi bi-arrow-bar-right': !sideNavStatus}">
+                </i>
             </a>
         </li>
     </ul>

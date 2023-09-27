@@ -10,6 +10,9 @@ app-header {
     transition: width 250ms ease-in;
 }
 
+.reduced-header {
+    width: calc(100% - 250px);
+}
 
 main {
     position: absolute;
@@ -17,7 +20,6 @@ main {
     top: 0rem;
     z-index: 1;
 }
-
 
 app-sidebar {
     position: absolute;
@@ -32,3 +34,24 @@ app-sidebar {
     border-right: 1px solid #a4a4a4;
 }
 
+.app-side-nav-open {
+    width: 250px;
+}
+
+.display-area {
+    position: absolute;
+    left: 60px;
+    top: 3.7rem;
+    width: calc(100% - 60px);
+    height: calc(100vh - 3.7rem);
+    padding: 20px;
+    transition: left 250ms ease-in, width 250ms ease-in;
+    overflow-x: auto;
+}
+
+.display-area-shrink {
+    width: calc(100% - 250px);
+    left: 250px;
+    padding: 20px;
+    height: calc(100vh - 3.7rem);
+}

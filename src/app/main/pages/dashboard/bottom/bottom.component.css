@@ -1,0 +1,23 @@
+
+
+.box-title {
+    font-weight: 600;
+  }
+  
+  .box-icon {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+   .mission-box {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e2;
+  }
